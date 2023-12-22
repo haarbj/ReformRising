@@ -1,0 +1,156 @@
+/* Background and text color preferences */
+body {
+  background: #131515;
+  color: #fffafb;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* Reset default margin and padding */
+.content body, h1, p, img {
+  margin: 0;
+  padding: 5px;
+}
+
+embed, iframe {
+  max-width: 100%;
+  text-align: center;
+  overflow: hidden; /* Added overflow: hidden to prevent overflow */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  padding: 100px;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the sticky header */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: #2b2c28;
+  color: fffafb;
+  text-align: center;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-links {
+  display: flex;
+}
+
+.header-button {
+  padding: 8px 15px;
+  margin-left: 10px; /* Adjust spacing between buttons */
+  color: #17453E;
+  background-color: #fffafb;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.header-button:hover {
+  background-color: #131515;
+  color: #7de2d1;
+}
+
+.text b {
+  font-weight: normal;
+  color: #339989;
+}
+
+/* Styling for the main content */
+main, embed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 80vh; /* Adjust minimum height */
+}
+
+.blurb {
+  text-align: center;
+  width: 40%;
+}
+
+.content {
+  text-align: center;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for the footer */
+.contact-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 0px;
+  width: 100%;
+}
+
+.contact-info {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #7de2d1; /* Link color */
+}
+
+.content a:link {
+  color: #7de2d1;
+  background-color: transparent;
+  text-decoration: none;
+}
+.content a:visited {
+  color: #7de2d1;
+  background-color: transparent;
+  text-decoration: none;
+}
+.content a:hover {
+  color: #7de2d1;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.content a:active {
+  color: #7de2d1;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+embed {
+  width: 620px;
+  height: 750px;
+}
+
+.header-link {
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Remove default underline */
+}
