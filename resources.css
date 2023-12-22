@@ -1,0 +1,75 @@
+.content {
+  max-width: 100%;
+  text-align: center;
+  overflow: hidden; /* Added overflow: hidden to prevent overflow */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  padding: 100px;
+}
+
+embed {
+  width: 620px;
+  height: 750px;
+}
+
+/* Background and text color preferences */
+body {
+  background: #131515;
+  color: #fffafb;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* Reset default margin and padding */
+body,
+.content,
+h1,
+p,
+img {
+  margin: 0;
+  padding: 0; /* Adjusted to reset padding to zero */
+}
+
+/* Styling for the sticky header */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: #2b2c28;
+  color: fffafb;
+  text-align: center;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-links {
+  display: flex;
+}
+
+.header-button {
+  padding: 8px 15px;
+  margin-left: 10px; /* Adjust spacing between buttons */
+  color: #17453E;
+  background-color: #fffafb;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.header-button:hover {
+  background-color: #131515;
+  color: #7de2d1;
+}
+
+.header-link {
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Remove default underline */
+}
